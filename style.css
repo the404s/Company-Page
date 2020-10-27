@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.nav-item{
+    font-family: 'Roboto', monospace;
+}
+
+.bg-trans{
+    background-color: transparent;
+}
+.bg-blue{
+    background-color: #1b1f3b;
+    color: white;
+}
+.f-white{
+    color: white;
+}
+
+.fixed-top.scrolled {
+    background-color: #1b1f3b!important;
+    transition: background-color 200ms linear;
+}
+
+.fixed-top.scrolled .nav-link {
+    color:#555;
+}
