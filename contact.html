@@ -10,43 +10,44 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/ js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe +A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"  crossorigin="anonymous"></script>
 </head>
-<body class="vh100">
-    <header>
+<body>
+    <header style="width: 100%; height: 350px; background-image: url(./images/contact.jpg); background-size: cover; border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%; ">
         
-        <img src="./images/contact.jpg" class="img-fluid" style="position: fixed; z-index: -1;" alt="Responsive image">
-        <h1>Contact</h1>
-        <h3>This is the 404's contact page</h3>
-        <br>
-        <br><br>
         
+        
+        <div class="m-4 pt-5"  style="width: 50%; height: 30% ; position: absolute; background-color:rgba(0, 0, 0, 0.103); border-radius: 50%; text-align: center;">
+            <h1 class="p-2">Contact</h1>
+            <h3 class="p-2">This is the 404's contact page</h3>
+        </div>
         
     </header>
-<div class="divider text-white" style="color:white">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="110px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg" data-src="assets/img/dividers/divider-2.svg">
-        <path style="fill: white" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
-    </svg>
-          </div>
+
+        
     
-    <main class="bg-white vh-100" >
-        <section class="d-flex justify-content-center"> 
-            <div>
-                <h2 class="col-">Visit</h2>
+    <main class="bg-white w-100" >
+        <section class="d-flex flex-column flex-sm-row text-center p-5"> 
+            <div class="col">
+                <h2>Visit</h2>
                 <p>Berlin</p>
             </div>
-            <div>
-                <h1 class="col-">Email</h1>
+            <div class="col">
+                <h2 >Email</h2>
                 <p>info@404s.com</p>
             </div>
-            <div>
-                <h1 class="col-">Call</h1>
+            <div class="col">
+                <h2>Call</h2>
                 <p>+49 123456789</p>
             </div>
         </section>
 
-        <section class="map">
+        <section class="map p-5">
+            <div id="map-container-google-1" class="z-depth-1-half map-container col" style=" width: 100%; height: 100%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.632770119076!2d13.411111951562798!3d52.521984643735294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1edb11286f%3A0x30fc01c366e4166e!2sAlexanderplatz!5e0!3m2!1sen!2sus!4v1603805418545!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                </div>
         </section>
         
-        <section class="contact-form">
+        <section class="contact-form p-5">
             <div class="container">
                 <div class="row justify-content-center">
                 <form>
