@@ -9,44 +9,124 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/ js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe +A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"  crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.nav-item{
+    font-family: 'Roboto', monospace;
+}
+
+.bg-trans{
+    background-color: transparent;
+}
+.bg-blue{
+    background-color: #1b1f3b;
+    color: white;
+}
+.f-white{
+    color: white;
+}
+
+.fixed-top.scrolled {
+    background-color: #1b1f3b!important;
+    transition: background-color 200ms linear;
+}
+
+.fixed-top.scrolled .nav-link {
+    color:#555;
+}
+    </style>
+    
+
 </head>
-<body class="vh100">
-    <header>
-        
-        <img src="./images/contact.jpg" class="img-fluid" style="position: fixed; z-index: -1;" alt="Responsive image">
-        <h1>Contact</h1>
-        <h3>This is the 404's contact page</h3>
-        <br>
-        <br><br>
-        
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-trans fixed-top" style="height:120px; background-color:rgba(0, 0, 0, 0.2); ">
+        <div class="col-1"></div>
+        <a class="navbar-brand" href="index.html">
+            <img src="./images/404.png" alt="404logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse h4 justify-content-end">
+            <ul class="navbar-nav col-8 d-flex justify-content-between">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Team </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Projects </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Contact us </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-1"></div>
+    </nav>
+
+    <header style="width: 100%; height: 380px; background-image: url(./images/contact.jpg); background-size: cover; border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%; ">
+
+        <div class="col-9 col-sm-8 col-md-7 d-flex" style="position: absolute; top: 120px;">
+        <div class="pt-2 col-9 col-sm-8 col-md-7 d-inline-block"  style=" background-color:rgba(0, 0, 0, 0.2); border-bottom-left-radius: 50% 40%;
+        border-bottom-right-radius: 50% 40%; text-align: center;">
+            <h1 class="p-2 text-white text-b" style="-webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 10px 6px rgba(0, 0, 0, 0.5);">
+            Contact us
+            </h1>
+            <h4 class="p-2">This is the 404's contact page</h4>
+        </div>
+
+            <div class="flex-row ml-3">
+            <div class="d-flex mt-3 align-items-center justify-content-center" style="width: 56px; height: 56px; position: relative; background-color:rgba(0, 0, 0, 0.103); border-radius: 50%; box-shadow: 0.5vmin 0.5vmin 0.5vmin 0 rgba(0, 0, 0, 0.2);">
+            
+                <ion-icon name="call-outline" style="font-size: 32px; color: white;"></ion-icon>
+            </div>
+
+            <div class="d-flex mt-3 align-items-center justify-content-center" style="width: 56px; height: 56px; position: relative; background-color:rgba(0, 0, 0, 0.103); border-radius: 50%; box-shadow: 0.5vmin 0.5vmin 0.5vmin 0 rgba(0, 0, 0, 0.2);">
+            
+                <ion-icon name="mail-outline" style="font-size: 32px; color: white;"></ion-icon>
+            </div>
+
+            <div class="d-flex mt-3 align-items-center justify-content-center" style="width: 56px; height: 56px; position: relative; background-color:rgba(0, 0, 0, 0.103); border-radius: 50%; box-shadow: 0.5vmin 0.5vmin 0.5vmin 0 rgba(0, 0, 0, 0.2);">
+            
+                <ion-icon name="location-outline" style="font-size: 32px; color: white;"></ion-icon>
+            </div>
+            </div>
+        </div>
         
     </header>
-<div class="divider text-white" style="color:white">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="110px" viewBox="0 0 100 100" version="1.1" preserveAspectRatio="none" class="injected-svg" data-src="assets/img/dividers/divider-2.svg">
-        <path style="fill: white" d="M0,0 C16.6666667,66 33.3333333,99 50,99 C66.6666667,99 83.3333333,66 100,0 L100,100 L0,100 L0,0 Z"></path>
-    </svg>
-          </div>
+
+        
     
-    <main class="bg-white vh-100" >
-        <section class="d-flex justify-content-center"> 
-            <div>
-                <h2 class="col-">Visit</h2>
+    <main class="bg-white w-100" >
+        <section class="d-flex flex-column flex-sm-row text-center p-5"> 
+            <div class="col">
+                <h2><b>Visit</b></h2>
+                <p>Alexanderplatz 1</p>
                 <p>Berlin</p>
             </div>
-            <div>
-                <h1 class="col-">Email</h1>
+            <div class="col">
+                <h2 ><b>Email</b></h2>
                 <p>info@404s.com</p>
             </div>
-            <div>
-                <h1 class="col-">Call</h1>
+            <div class="col">
+                <h2><b>Call</b></h2>
                 <p>+49 123456789</p>
             </div>
         </section>
 
-        <section class="map">
+        <section class="map p-5" style="height:50vh;">
+            <div id="map-container-google-1" class="z-depth-1-half map-container col" style=" width: 100%; height: 100%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.632770119076!2d13.411111951562798!3d52.521984643735294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e1edb11286f%3A0x30fc01c366e4166e!2sAlexanderplatz!5e0!3m2!1sen!2sus!4v1603805418545!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style=" border-radius: 5vmin; box-shadow: 0.5vmin 0.5vmin 0.5vmin 0vmin grey;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe>
+                </div>
         </section>
         
-        <section class="contact-form">
+        <section class="contact-form p-5">
             <div class="container">
                 <div class="row justify-content-center">
                 <form>
@@ -88,5 +168,17 @@
             </div>
         </section>
     </main>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+    <script>
+        $(function () {
+      $(document).scroll(function () {
+          var $nav = $(".fixed-top");
+          $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+    </script>
 </body>
+
+
 </html>
